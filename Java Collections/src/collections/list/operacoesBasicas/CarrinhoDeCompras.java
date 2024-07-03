@@ -1,4 +1,4 @@
-package collections.list.operacoes_basicas;
+package collections.list.operacoesBasicas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,8 +34,8 @@ public class CarrinhoDeCompras {
 	
 	//Valor total do carrinho
 	public double calcularValorTotal() {
-	
-		return comprasList.
+		
+		
 	}
 	
 	public void exibirItens() {
