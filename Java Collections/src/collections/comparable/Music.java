@@ -1,4 +1,4 @@
-package edu.java.collections.comparable;
+package collections.comparable;
 
 public class Music implements Comparable<Music>{
 	

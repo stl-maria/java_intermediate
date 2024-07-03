@@ -1,12 +1,12 @@
-package edu.java.collections.comparator;
+package collections.comparator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import edu.java.collections.comparable.Livro;
+import collections.comparable.Livro;
 
-public class Biblioteca_other {
+public class Biblioteca {
 
 	//private static final Comparator Titulo = null;
 

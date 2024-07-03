@@ -1,4 +1,4 @@
-package edu.java.collections.comparable;
+package collections.comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;

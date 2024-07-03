@@ -1,4 +1,4 @@
-package edu.java.collections.comparator;
+package collections.comparator;
 
 import java.util.Comparator;
 

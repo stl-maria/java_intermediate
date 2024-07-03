@@ -1,4 +1,4 @@
-package edu.java.collections.comparable;
+package collections.comparable;
 
 //Classe Livro que implementa Comparable
 public class Livro implements Comparable<Livro>{
