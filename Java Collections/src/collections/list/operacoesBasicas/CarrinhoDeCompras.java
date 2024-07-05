@@ -34,13 +34,29 @@ public class CarrinhoDeCompras {
 	
 	//Valor total do carrinho
 	public double calcularValorTotal() {
-		
-		
+		double somaTotal=0;
+		if (!comprasList.isEmpty()){
+			for(Item i:comprasList){
+				double somaItem = i.getPreco() * i.getQuantidade();
+				somaTotal += somaItem;
+			}
+		}
+		return somaTotal;
 	}
-	
+
+	//Exibir todos itens
 	public void exibirItens() {
 		System.out.println(comprasList);
 	}
-	
+
+	// Main
+	public static void main(String[] args){
+		CarrinhoDeCompras compras = new CarrinhoDeCompras();
+
+		compras.adicionarItem("pão",10, 1);
+		compras.adicionarItem("sabonete", 10, 2);
+
+		System.out.println("Valor total dos itens: "+compras.calcularValorTotal());
+	}
 	
 }
