@@ -47,9 +47,10 @@ public class CatalogoLivros {
 		Livro livroPorTitulo = null;
 		if (!livroLista.isEmpty()) {
 			for (Livro l : livroLista) {
-				if (l.getTitulo().equalsIgnoreCase(titulo)); //o primeiro que foi adicionado, será o primeiro a ser imprimido
+				if (l.getTitulo().equalsIgnoreCase(titulo)) {//o primeiro que foi adicionado, será o primeiro a ser imprimido
 					livroPorTitulo = l;
 					break;
+				}
 			}
 		}
 		return livroPorTitulo;
@@ -58,8 +59,10 @@ public class CatalogoLivros {
 	
 	// Main
 	public static void main (String[]args) {
-		CatalogoLivros catalagoLivros = new CatalogoLivros();	
-		
+		//criando uma lista de objetos do tipo "Livro"
+		CatalogoLivros catalagoLivros = new CatalogoLivros();
+
+		//adicionando
 		catalagoLivros.adicioandoLivro("Titulo 1", "Autor 1", 2000);
 		catalagoLivros.adicioandoLivro("Titulo 2", "Autor 2", 2001);
 		catalagoLivros.adicioandoLivro("Titulo 3", "Autor 3", 2002);
@@ -67,10 +70,11 @@ public class CatalogoLivros {
 		catalagoLivros.adicioandoLivro("Titulo 1", "Autor 3", 2003);
 		catalagoLivros.adicioandoLivro("Titulo 2", "Autor 2", 2000);
 		catalagoLivros.adicioandoLivro("Titulo 3", "Autor 1", 2000);
-		
-		System.out.println(catalagoLivros.pesquisarPorAutor("Autor 2"));
-		System.out.println(catalagoLivros.pesquisarPorAno(2001, 2002));
-		System.out.println(catalagoLivros.pesquisaPorTitulo("Titulo 1"));
+
+		//pesquisando
+		System.out.println("Pesquisando por autor: "+catalagoLivros.pesquisarPorAutor("Autor 2"));
+		System.out.println("Pesquisando por ano: "+catalagoLivros.pesquisarPorAno(2001, 2002));
+		System.out.println("Pesquisando por titulo: "+catalagoLivros.pesquisaPorTitulo("Titulo 1"));
 		
 	}
 	

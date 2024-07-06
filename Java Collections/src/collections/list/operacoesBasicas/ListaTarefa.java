@@ -42,19 +42,25 @@ public class ListaTarefa {
 
 	
 	public static void main (String[]args) {
+		//criando o objeto
 		ListaTarefa listaTarefa = new ListaTarefa(); //criando objeto do tipo ListaTarefa
-		
+
+		//quantidade
 		System.out.println("Número total de elementos na lista: "+listaTarefa.obterNumeroTotalTarefas());;
-		
+
+		//adicionando
 		listaTarefa.adicionarTarefa("Tarefa 1");
 		listaTarefa.adicionarTarefa("Tarefa 2");
 		listaTarefa.adicionarTarefa("Tarefa 1");
-		
+
+		//quantidade
 		System.out.println("Número total de elementos na lista: "+listaTarefa.obterNumeroTotalTarefas());
-		
+
+		//removendo
 		listaTarefa.removerTarefa("Tarefa 2");
 		System.out.println(listaTarefa.obterNumeroTotalTarefas());
-		
+
+		//vizualização
 		listaTarefa.obterDescricoesTarefas();
 	}
 }

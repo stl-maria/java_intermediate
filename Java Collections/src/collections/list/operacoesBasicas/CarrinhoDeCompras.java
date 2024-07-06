@@ -51,12 +51,22 @@ public class CarrinhoDeCompras {
 
 	// Main
 	public static void main(String[] args){
+		//criando lista do tipo CarrinhoDeCompras
 		CarrinhoDeCompras compras = new CarrinhoDeCompras();
 
+		//adicionando
 		compras.adicionarItem("pão",10, 1);
 		compras.adicionarItem("sabonete", 10, 2);
+		compras.adicionarItem("sal", 3, 5);
 
+		//somando todos os itens
 		System.out.println("Valor total dos itens: "+compras.calcularValorTotal());
+
+		//removendo item
+		compras.removerItem("sal");
+
+		//exibindo os itens
+		compras.exibirItens();
 	}
 	
 }
