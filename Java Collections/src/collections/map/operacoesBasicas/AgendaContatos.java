@@ -37,5 +37,31 @@ public class AgendaContatos {
 		}
 		return numeroPorNome;
 	}
+
+	// Main
+	public static void main (String[]args){
+		//criando
+		AgendaContatos agenda = new AgendaContatos();
+
+		//adicionando
+		agenda.adicionarContato("Lucas", 12345678);
+		agenda.adicionarContato("Lulu", 87654321);
+		agenda.adicionarContato("Maria", 11122233);
+		agenda.adicionarContato("Rosie", 52457893);
+		agenda.adicionarContato("Natalia", 45125786);
+		agenda.adicionarContato("Ana", 32458716);
+
+		//exibindo
+		agenda.exibirContato();
+
+		//removendo
+		agenda.removerContato("Lucas");
+
+		agenda.exibirContato();
+
+		//pesquisando pelo nome e retornando o telefonde do contato
+		System.out.println("O numero da Maria é: "+agenda.pesquisaPorNome("Maria"));
+
+	}
 	
 }
