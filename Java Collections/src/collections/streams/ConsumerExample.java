@@ -37,6 +37,10 @@ public class ConsumerExample {
                 System.out.println(n);
         });
         */
+
+        /* - com filter
+        numeros.stream().filter(e -> e %2 == 0).forEach(System.out::println);
+         */
     }
 
 
